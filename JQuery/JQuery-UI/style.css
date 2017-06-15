@@ -1,0 +1,20 @@
+.elem {
+  border: 1px solid;
+  min-height: 100px;
+  max-width: 100px;
+}
+
+.bigger {
+  border: 1px solid;
+  min-height: 150px;
+  min-width: 150px;
+}
+
+.right {
+  float: right;
+  margin: 1px;
+}
+
+.green {
+  background-color: Aquamarine;
+}

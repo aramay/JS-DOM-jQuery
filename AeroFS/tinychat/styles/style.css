@@ -1,0 +1,28 @@
+/* Stub CSS file for your tinychat app! */
+
+body {
+    background-color: snow;
+    color: #333;
+}
+
+
+p {
+    background: aquamarine;
+}
+
+div.media-body p:hover {
+    background-color: goldenrod;
+}
+
+
+#editMessage {
+    /*display: none;*/
+}
+
+.edit-mesg-container {
+    /*display: none;*/
+}
+
+div.edit-mesg-container > input {
+    width: 90%;
+}

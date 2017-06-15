@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+    <title>tinychat</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="./styles/style.css" type="text/css">
+
+    
+
+    
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            tinychat
+            <span class="glyphicon glyphicon-bullhorn"></span>
+            <span class="glyphicon glyphicon-globe"></span>
+            <span class="glyphicon glyphicon-heart"></span>
+        </h1>
+        <div class="row">
+            <div class="col-xs-12 chat">
+                <p>A simple chat app will go here.</p>
+            </div>
+        </div>
+
+        <!-- Left-aligned media object -->
+        <div id="media" class="media">
+
+            <script id="messages-template" type="text/x-handlebars-template">
+                {{#each messages}}
+                <p>
+                <div class="media-left">
+                    <img src="lightbulb-76422.jpeg" class="media-object" style="width:60px">
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">{{author}}</h4>
+                    <p>
+                        {{content}}
+                    </p>
+                    
+                </div>  
+                </p>
+                {{/each}}
+            </script>
+            
+            <!--<script id="new-message-template" type="text/x-handlebars-template">
+                <p>
+                <div class="media-left">
+                    <img src="#" class="media-object" style="width:60px">
+                </div>
+                <div id={{id}} class="media-body">
+                    <h4 class="media-heading">{{author}}</h4>
+                    <p>
+                        {{content}}
+                    </p>
+                </div>  
+                </p>
+            </script>-->
+
+        </div>
+
+        <div id="new-mesg">
+            <input type="text" class="form-control" id="message" placeholder="Enter message" name="email">
+            <button id="submit-mesg" type="submit" class="btn btn-default">Submit</button>
+        </div>
+    </div>
+    <!-- Left-aligned media object -->
+    <div class="row">
+        <div id="new-media" class="media">
+            <script id="new-message-template" type="text/x-handlebars-template">
+                <p>
+                <div class="media-left">
+                    <img src="lightbulb-76422.jpeg" class="media-object" style="width:60px">
+                </div>
+                <div id={{id}} class="media-body">
+                    <h4 class="media-heading">{{author}}</h4>
+                    <p>
+                        {{content}}
+                    </p>
+                </div>  
+                </p>
+            </script>
+        </div>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js" type="text/javascript"></script>
+
+<script src="./js/loadmessages.js" type="text/javascript"></script>
+
+<script src="handlebars-v4.0.10.js"></script>
+
+<script src="./js/app.js" type="text/javascript"></script>
+
+</html>
